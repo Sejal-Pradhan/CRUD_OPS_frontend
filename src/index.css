@@ -1,0 +1,102 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body{
+  background: linear-gradient(90deg, rgba(228,255,136,1) 0%, rgba(157,255,201,1) 49%, rgba(117,232,255,1) 100%);
+}
+
+main{
+  max-width: 80%;
+  margin: 100px auto;
+}
+
+.title{
+  text-align: center;
+  padding: 20px 0;
+}
+
+.input_holder{
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+input{
+  width: 330px;
+}
+
+button{
+  width: 150px;
+}
+
+input, button{
+  font-size: 18px;
+  border-radius: 20px;
+  padding: 10px;  
+  background-color: rgb(255, 179, 124);
+}
+
+button:hover{
+  cursor: pointer;
+  transform: scale(1.05);
+  transition: all 0.5s linear;
+  background-color: brown;
+}
+
+ul{
+  list-style: none;
+  margin-top: 20px;
+}
+
+li{
+  text-transform: capitalize;
+  color: rgb(89, 0, 0);
+  font-weight: 700;
+  font-size: 18px;
+  border-radius: 10px;
+  background-color: rgb(0, 227, 19);
+  padding: 15px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.icon_holder{
+  display: flex;
+  gap: 10px;
+  font-size: 25px;
+}
+
+.icon{
+  cursor: pointer;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  margin-top: 30px;
+  margin-left: -50px;
+  visibility: hidden;
+  width: 80px;
+  background-color: rgb(2, 99, 0);
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  font-size: 14px;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
